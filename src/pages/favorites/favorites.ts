@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, ModalController } from 'ionic-angular';
+import { IonicPage, ModalController, MenuController } from 'ionic-angular';
 import { Quote } from '../../data/quote.interface';
 import { QuotesService } from '../../services/quotes';
 import { QuotePage } from '../quote/quote';
@@ -37,4 +37,5 @@ export class FavoritesPage {
       });
       this.quotes.splice(position, 1);
   }
+
 }
