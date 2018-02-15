@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Quote } from '../../data/quote.interface';
 import quotes from '../../data/quotes';
 import { IonicPage } from 'ionic-angular';
+import { QuotesPage } from '../quotes/quotes';
 
 @IonicPage()
 @Component({
@@ -10,6 +11,7 @@ import { IonicPage } from 'ionic-angular';
 })
 export class LibraryPage implements OnInit {
   quoteCollection: {category: string, quotes: Quote[], icon: string}[];
+  quotesPage = QuotesPage;
 
   ngOnInit() {
     this.quoteCollection = quotes;
